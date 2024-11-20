@@ -43,7 +43,6 @@ Options:
 # Autocomplete function
 _exec_on_lines_completion() {
     local current_arg="${COMP_WORDS[COMP_CWORD]}"
-    local prev_arg="${COMP_WORDS[COMP_CWORD-1]}"
 
     # If the current argument is the command (first argument)
     if [[ $COMP_CWORD -eq 1 ]]; then
